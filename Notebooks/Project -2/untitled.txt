@@ -1,0 +1,43 @@
+PatientId          62299
+AppointmentID     110527
+Gender                 2
+ScheduledDay      103549
+AppointmentDay        27
+Age                  104
+Neighbourhood         81
+Scholarship            2
+Hipertension           2
+Diabetes               2
+Alcoholism             2
+Handcap                5
+SMS_received           2
+No-show                2
+dtype: int64
+
+#0 Clean the data
+#0.1 check the whole data
+#0.2 handle missing values
+#0.3 rename columns
+#1 Descriptive Analysis
+#1.1 Hypothesis 1: Male show more
+#1.2 Hypothesis 2: Longer gap between scheduled day and appointment date increases No show
+#1.3 Hypothesis 3: High Age group decreases No show
+#1.4 Hypothesis 4: High Scholorship, Low Hipertension, Low Diabetes, Alcoholims, No Handcap, SMS Not recieved cases No-show
+#1.5 Hypothesis 5: Location dependency for the No-show
+#1.6 Hypothesis 6: Appointments on Holidays gets No-Show
+#1.7 Hypothesis 7: Appointments on Particular Days of week may have influence
+#1.8 Hypothesis 8: Appointments on Particular Months may have influence
+#1.9 Hypothesis 9: First comers are No-showers
+#1.10 Hypothesis 10: One who cancels has higher probability of cancelling again
+#2 Predictive Analytics
+#2.1 Design the Model
+#3 High Level Architecture
+#3.1 The whole picture
+
+
+date_delta = pd.to_datetime(df.AppointmentDay) - pd.to_datetime(df.ScheduledDay)
+date_delta = date_delta.dt.days
+df['date_delta'] = date_delta
+filt = df['date_delta'] < 0
+df.loc[filt,'date_delta'] = 0
+df['day'] = pd.to_datetime(df.AppointmentDay).dt.day_name()

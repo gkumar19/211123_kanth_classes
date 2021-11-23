@@ -1,0 +1,17 @@
+Plotly:
+Needs a tify dataframe, i.e. each row contains one single data point,
+pivoted data contains multiple data in each row and thus is not suitable
+directly with dataframe, and will need df.melt functions
+
+Plotly Scatter attributes:
+x, y, color, symbol, size, text, error_x, error_y, marginal_x, marginal_y, trendline
+
+Plotly Bar attributes:
+x, y, color, text, error_x, error_y, orientation, barmode:'overlay', 'relative', 'group', 'stack'
+for putting bars one after another just dont use x, instead use facet_col
+
+Plotly scatter_matric:
+same as scatter with all combinations
+
+
+Pie chart

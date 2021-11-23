@@ -1,0 +1,11 @@
+Descriptive Analytics
+ Metrics
+ Patterns
+ Insights
+ Actions
+Predictive Analytics
+ historical data
+ Insights by machine
+ Action by Human
+Prescriptive Analytics
+ insight, decision,action all by machine

@@ -1,0 +1,8 @@
+Business Understanding: Domain Knowledge
+Data Collection
+Data Understanding: Python/R/Scala --> Data Quality Report
+Data Prep: 
+MLTrain
+ML Test
+ML Eval [Match Real time business worst case need]
+ML Deploy: IOT/Software Engineers

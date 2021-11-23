@@ -1,0 +1,28 @@
+Categorical columns
+Gender
+EducationBackground
+MaritalStatus
+EmpDepartment
+EmpJobRole
+BusinessTravelFrequency
+OverTime
+Attrition
+
+Numerical COlumns
+DistanceFromHome
+EmpEducationLevel
+EmpEnvironmentSatisfaction
+EmpHourlyRate
+EmpJobInvolvement
+EmpJobLevel
+EmpJobSatisfaction
+NumCompaniesWorked
+EmpLastSalaryHikePercent
+EmpRelationshipSatisfaction
+TotalWorkExperienceInYears
+TrainingTimesLastYear
+EmpWorkLifeBalance
+ExperienceYearsAtThisCompany
+ExperienceYearsInCurrentRole
+YearsSinceLastPromotion
+YearsWithCurrManager
